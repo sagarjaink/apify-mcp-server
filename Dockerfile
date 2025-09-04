@@ -29,4 +29,4 @@ COPY package.json package-lock.json ./
 RUN npm ci --omit=dev
 
 # Set the entry point for the container
-ENTRYPOINT ["node", "dist/stdio.js"]
+ENTRYPOINT ["node", "dist/main.js"]
